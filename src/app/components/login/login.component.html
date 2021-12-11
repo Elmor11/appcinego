@@ -1,0 +1,54 @@
+<body>
+    <main class="login-design"> 
+        <div class="waves">
+            
+        <img src="assets/imagenes/cine.png" width="376px" height="374px" >
+
+        </div>
+        <div class="login">
+            <div class="login-data">
+                <img src="assets/imagenes/reproductor-de-video.png" width="276px" height="236px">
+                <h1>¡Haz parte de la experiencia!</h1>
+                <form action="#" [formGroup]="formulario" (ngSubmit)="verificarDatos()" autocomplete="off" class="login-form">
+                    <div class="input-group">
+                        <label class="input_fill">
+                            <input type="text"
+                            name="username" 
+                            id="username" 
+                            class="form-control"
+                            formControlName="username"
+                            [class.is-invalid]="usernameNoValido" required>
+                            <span class="input-label">Username</span>
+                            <i class="fas fa-envelope"></i>
+                        </label>
+                        <small *ngIf="usernameNoValido" class="text-danger">
+                            Debe ingresar el nombre del usuario
+                        </small>
+                    </div>
+                    <div class="input-group">
+                        <label class="input_fill">
+                            <input type="password"
+                            name="contrasena" 
+                            id="contrasena" 
+                            class="form-control"
+                            formControlName="contrasena"
+                            [class.is-invalid]="contrasenaNoValido"required>
+                            <span class="input-label">Contraseña</span>
+                            <i class="fas fa-lock"></i>
+                        </label>
+                        <small *ngIf="contrasenaNoValido" class="text-danger">
+                            Debe ingresar la Contraseña 
+                        </small> 
+                    </div>
+                    <a [routerLink]="['/registro']">¿Necesitas una cuenta?</a>
+                    <input type="submit" value="iniciar sesion" class="btn-login">
+                </form>
+            </div>
+            <div class="error-login" *ngIf="error">
+                los datos ingresados son incorrectos
+            </div>
+        </div>
+        
+    </main>
+    
+</body>

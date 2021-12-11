@@ -1,0 +1,256 @@
+
+.header1{
+
+    background: white;
+    height: 120px;
+    margin-bottom: 0px;
+    
+    
+}
+.bienvenida{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    color: rgb(224, 92, 4);
+    font-size: 10mm;
+    text-align: center;
+    position: relative;
+    bottom:45px;
+}
+.logo{
+    position:relative;
+    top:75px;
+    left:49%;
+}
+nav a{
+    text-decoration:none;
+    color:inherit;
+    font-size:17px;
+    
+    }
+ 
+    
+    nav li{
+    display: inline-block;
+    width:10%;
+    padding:10px 10px;
+    background-color:rgb(252, 252, 249);
+    border:1px solid #000;
+    text-align: center;
+    color:rgb(224, 92, 4);
+    font-family: fantasy;
+    border-radius: 10px;
+    
+    }
+    nav li:hover{
+    background-color:rgb(185, 241, 52);
+    color:rgb(38, 151, 196);
+    }
+
+nav{
+    background: rgb(224, 92, 4);
+    height:43px;
+    margin-bottom: 0px;
+    text-align: center;
+
+}
+.cont1{
+    height:800px;
+    background-image: url("/src/assets/imagenes/GodzillavsKong.jpg");
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+}
+
+
+.cont2{
+    height:650px;
+    
+}
+.t1{
+    position: relative;
+    top:10%;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif ;
+    color:rgb(224, 92, 4);
+}
+.pa{
+    font-size: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration:none;
+    color:black;
+}
+.numero li{
+    display: inline-block;
+    width:17%;
+    padding:10px 10px;
+    text-align:center;
+} 
+.numero a{
+    font-size: 70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration:none;
+    color:rgb(224, 92, 4);
+    
+}
+
+.texto li{
+    display: inline-block;
+    width:17%;
+    padding:10px 10px;
+    text-align:center; 
+}
+.texto a{
+    font-size: 14px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration:none;
+    color:black;
+}
+.cont3{
+    height: 300px;
+    background: black;
+}
+.t2{
+    position:relative;
+    left:10%;
+    top:30%;
+    font-family:Arial, Helvetica, sans-serif ;
+    color: white
+    
+
+}
+.t3{
+    position: relative;
+    left: 10%;
+    top:30%;
+    font-family:Arial, Helvetica, sans-serif ;
+    color: white
+    
+}
+.cont4{
+    height: 600px;
+}
+.img1{
+    position: relative;
+    bottom:15%;
+    left:10px;
+}
+.img2{
+    position:relative;
+    bottom:15%;
+    left:20px;
+}
+.img3{
+    position:relative;
+    bottom:15%;
+    left:30px;
+}
+.img4{
+    position:relative;
+    bottom:15%;
+    left:40px;
+}
+.img5{
+    position:relative;
+    bottom:15%;
+    left:50px;
+}
+
+.btn1{
+    width: 10%;
+    height: 9%;
+    border-radius:10px ;
+    color:rgb(252, 252, 249);
+    background-color: rgb(224, 92, 4);
+    font-family:Arial, Helvetica, sans-serif ;
+    position:relative;
+    left:45%;
+    cursor: pointer;
+}
+
+.cont5{
+    height: 300px;
+    background:rgb(224, 92, 4);
+}
+.t4{
+    position:relative;
+    left:10%;
+    top:30%;
+    font-family:Arial, Helvetica, sans-serif ;
+    color: white
+}
+.t5{
+    position:relative;
+    left:10%;
+    top:30%;
+    font-family:Arial, Helvetica, sans-serif ;
+    color: white
+}
+.cont6{
+    height: 850px;
+}
+.img6{
+    position:relative;
+    bottom:10%;
+    left:10%;
+}
+.img7{
+    position:relative;
+    bottom:10%;
+    left:20%;
+}
+.img8{
+    position:relative;
+    bottom:10%;
+    left:30%;
+}
+.img9{
+    position:relative;
+    bottom:10%;
+    left:40%;
+}
+.img9{
+    position:relative;
+    bottom:10%;
+    left:40%;
+}
+.img10{
+    position:relative;
+    left:10%;
+}
+.img11{
+    position:relative;
+    left:20%;
+}
+.img12{
+    position:relative;
+    left:30%;
+}
+.img13{
+    position:relative;
+    left:40%;
+}
+.btn2{
+    width: 10%;
+    height: 7%;
+    border-radius:10px ;
+    color:rgb(252, 252, 249);
+    background-color: rgb(224, 92, 4);
+    font-family:Arial, Helvetica, sans-serif ;
+    position: relative;
+    top:19%;
+    right:7%;
+    cursor:pointer;
+}
+.pa{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+.f{
+    background-color: black;
+    height: 80px;
+}
+.p6{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif ;
+    color:white;  
+}

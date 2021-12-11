@@ -1,0 +1,37 @@
+
+
+<!-- {{reservas | json}} -->
+
+<div class="container">
+    <div class="uk-overflow-auto">
+        <table class="uk-table uk-table uk-table-hover uk-table-striped uk-table-small ">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>ID_USUARIO</th>
+                    <th>PELICULA</th>
+                    <th>UBICACIÓN_SILLA</th>
+                    <th>VALOR PAGO</th>
+                    <th>ACCIONES</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let reservasitem of Reservas">
+                    
+                    <td>{{reservasitem.id}}</td>
+                    <td>{{reservasitem.id_usuario}}</td>
+                    <td>{{reservasitem.pelicula}}</td>
+                    <td>{{reservasitem.ubicacion_silla}}</td>
+                    <td>{{reservasitem.valor_pago}}</td>
+                    <td>
+                
+                        <button class="uk-button uk-button-secondary" [routerLink]="['/editar',reservasitem.id]"><i class="fas fa-edit"></i> Editar</button>
+                        <button class="uk-button uk-button-danger" (click)="borrarReservas(reservasitem.id)"><i class="fas fa-trash-alt"></i> Eliminar</button>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+</div>

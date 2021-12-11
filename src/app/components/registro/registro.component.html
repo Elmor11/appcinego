@@ -1,0 +1,91 @@
+<body>
+    <main class="login-design"> 
+        <div class="waves1">
+            
+        <img src="assets/imagenes/directors-chair.png" width="376px" height="374px" >
+
+        </div>
+        <div class="login1">
+            <div class="login-data">
+                <img src="assets/imagenes/clapboard.png" width="276px" height="236px">
+                <h1>¡Haz parte de la experiencia!</h1>
+                <form action="#"[formGroup]="formulario"(ngSubmit)="guardarDatos()" autocomplete="off" class="login-form">
+                    <div class="input-group">
+                        <label class="input_fill">
+                            <input type="text"
+                            name="nombre" 
+                            id="nombre" 
+                            class="form-control"
+                            formControlName="nombre"
+                            [class.is-invalid]="nombreNoValido" required>
+                            <span class="input-label">Nombre</span>
+                            <i class="fas fa-envelope"></i>
+                        </label>
+                        <small *ngIf="usernameNoValido" class="text-danger">
+                            Debe ingresar el nombre del usuario
+                        </small>
+                    </div>
+                    <div class="input-group">
+                        <label class="input_fill">
+                            <input type="text"
+                            name="correoElectronico" 
+                            id="correoElectronico" 
+                            class="form-control"
+                            formControlName="correoElectronico"
+                            [class.is-invalid]="correoElectronicoNoValido"required>
+                            <span class="input-label">Correo Electronico</span>
+                            <i class="fas fa-lock"></i>
+                        </label>
+                        <small *ngIf="correoElectronicoNoValido" class="text-danger">
+                            Debe ingresar el Correo Electronico
+                        </small> 
+                    </div>
+                    <div class="input-group">
+                        <label class="input_fill">
+                            <input type="text"
+                            name="username" 
+                            id="username" 
+                            class="form-control"
+                            formControlName="username"
+                            [class.is-invalid]="usernameNoValido"required>
+                            <span class="input-label">Username</span>
+                            <i class="fas fa-lock"></i>
+                        </label>
+                        <small *ngIf="usernameNoValido" class="text-danger">
+                            Debe ingresar el username
+                        </small> 
+                    </div>
+                    <div class="input-group">
+                        <label class="input_fill">
+                            <input type="text"
+                            name="contrasena" 
+                            id="contrasena" 
+                            class="form-control"
+                            formControlName="contrasena"
+                            [class.is-invalid]="contrasenaNoValido"required>
+                            <span class="input-label">Contraseña</span>
+                            <i class="fas fa-lock"></i>
+                        </label>
+                        <small *ngIf="contrasenaNoValido" class="text-danger">
+                            Debe ingresar la Contraseña 
+                        </small> 
+                    </div>
+                    <a [routerLink]="['/login']">¿Ya tienes una cuenta?</a>
+                    <input type="submit" value="Registrarme" class="btn-login">
+                </form>
+            </div>
+            <div *ngIf="error" class="error-registro">
+                Los datos ingresados son incorrectos
+            </div>
+    
+            <div *ngIf="ingresado" class="alert-info">
+                Su registro se ha realizado con exito
+                <br>
+                Por favor inicie sesion <a [routerLink]="['/login']">aqui</a>
+            </div>
+    
+        </div>
+        
+    </main>
+    
+</body>

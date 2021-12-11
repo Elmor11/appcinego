@@ -1,0 +1,51 @@
+<header class="header">
+<div class="brand">
+  <a [routerLink]="['/components-app']">
+    <img src="assets/imagenes/logoCamara.PNG" alt="logo de la app">
+    <span >Cine Go</span>
+  </a>
+</div>
+<div class="nav-top">
+  <nav>
+    <ul *ngIf="sesionService.getUsuario().id==0">
+      <li>
+        <a [routerLink]="['/components-app']" class="active"> inicio</a>
+      </li>
+     
+      <li>
+        <a [routerLink]="['/login']" class="active"> Login</a>
+      </li>
+      <li>
+      <a [routerLink]="['/registro']" class="active">Register</a>
+      </li>
+    </ul>
+    <ul *ngIf="sesionService.getUsuario().id!=0">
+      <li>
+        <a [routerLink]="['/reservar']" class="active">reservar</a>
+      </li>
+      <li>
+      <a [routerLink]="['/misReservas']" class="active"> mis reservas</a>
+      </li>
+      <li>
+        <a [routerLink]="['/cerrar-sesion']" class="active">
+          cerrar sesion ({{ sesionService.getUsuario().nombre }}) 
+
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>  
+
+</header>
+
+<main>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+
+
+
+</main>
+<footer>
+  
+</footer>
